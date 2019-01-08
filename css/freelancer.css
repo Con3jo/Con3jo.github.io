@@ -315,6 +315,10 @@ section.success a.active {
     resize: none;
 }
 
+.floating-label-form-group input::placeholder,
+.floating-label-form-group textarea::placeholder {
+    color: white;
+}
 .floating-label-form-group label {
     display: block;
     z-index: 0;
