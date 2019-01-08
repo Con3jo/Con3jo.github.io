@@ -195,6 +195,13 @@ section.bright {
     background: rgb(255,180,100);
 }
 
+
+
+section.contact {
+    color: #fff;
+    background: #194C42;
+}
+
 section.success {
     color: #fff;
     background: #18bc9c;
