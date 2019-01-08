@@ -317,7 +317,7 @@ section.success a.active {
 
 .form-control input::placeholder,
 .form-control textarea::placeholder {
-    color: white;
+    color: white !important;
 }
 .floating-label-form-group label {
     display: block;
