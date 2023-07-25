@@ -4,6 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ :root {
+    --main-theme-color: #18bc9c;
+    --secundary-theme-color: #2c3e50;
+    --footer-color: #233140;
+    --main-bg-color: #ffffff;
+    --focus-color: rgb(255,180,100);
+    --transparent-bg-color: rgba(24,188,156,.9)
+
+  }
+
 body {
     overflow-x: hidden;
 }
@@ -22,7 +32,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: var(--main-theme-color);
 }
 
 h1,
@@ -59,30 +69,30 @@ hr.star-bright:after{
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: var(--main-bg-color);
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color: var(--main-bg-color);
+    background-color: var(--main-theme-color);
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: var(--secundary-theme-color);
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
+    color: var(--secundary-theme-color);
+    background-color: var(--main-bg-color);
 }
 
 hr.star-bright {
-    border-color: #fff;
+    border-color: var(--main-bg-color);
 }
 
 hr.star-bright:after {
-    color: #fff;
-    background-color: rgb(255,180,100);
+    color: var(--main-bg-color);
+    background-color: var(--focus-color);
 }
 
 .img-centered {
@@ -91,8 +101,8 @@ hr.star-bright:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: var(--main-bg-color);
+    background: var(--main-theme-color);
 }
 
 header .container {
@@ -191,20 +201,20 @@ section h2 {
 
 
 section.bright {
-    color: #fff;
-    background: rgb(255,180,100);
+    color: var(--main-bg-color);
+    background: var(--focus-color);
 }
 
 
 
 section.contact {
-    color: #fff;
+    color: var(--main-bg-color);
     background: #194C42;
 }
 
 section.success {
-    color: #fff;
-    background: #18bc9c;
+    color: var(--main-bg-color);
+    background: var(--main-theme-color);
 }
 
 section.success a,
@@ -213,7 +223,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: var(--secundary-theme-color);
 }
 
 @media(max-width:767px) {
@@ -243,7 +253,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: var(--transparent-bg-color);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -261,7 +271,7 @@ section.success a.active {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: var(--main-bg-color);
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -285,9 +295,9 @@ section.success a.active {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px var(--main-bg-color);
     font-size: 20px;
-    color: #fff;
+    color: var(--main-bg-color);
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -296,16 +306,16 @@ section.success a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    border: solid 2px var(--main-bg-color);
+    color: var(--main-theme-color);
+    background: var(--main-bg-color);
 }
 
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--main-bg-color);
 }
 
 .floating-label-form-group input,
@@ -345,7 +355,7 @@ section.success a.active {
 
 .floating-label-form-group::not(:first-child) {
     padding-left: 14px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid var(--main-bg-color);
 }
 
 .floating-label-form-group-with-value label {
@@ -354,15 +364,15 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: var(--main-theme-color);
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--main-bg-color);
 }
 
 footer {
-    color: #fff;
+    color: var(--main-bg-color);
 }
 
 footer h3 {
@@ -371,7 +381,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: var(--secundary-theme-color);
 }
 
 footer .footer-col {
@@ -380,14 +390,14 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: var(--footer-color);
 }
 
 .btn-social {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    border: 2px solid var(--main-bg-color);
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
@@ -464,7 +474,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: var(--secundary-theme-color);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -474,7 +484,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: var(--secundary-theme-color);
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
